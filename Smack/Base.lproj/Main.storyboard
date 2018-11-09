@@ -459,7 +459,7 @@
                                     <inset key="sectionInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="TKu-Ls-6oL">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="avatarCell" id="TKu-Ls-6oL" customClass="AvatarCell" customModule="Smack" customModuleProvider="target">
                                         <rect key="frame" x="20" y="0.0" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -477,6 +477,9 @@
                                             <constraint firstAttribute="bottom" secondItem="7vy-Zt-XWU" secondAttribute="bottom" constant="10" id="aGD-LG-AUs"/>
                                             <constraint firstItem="7vy-Zt-XWU" firstAttribute="top" secondItem="TKu-Ls-6oL" secondAttribute="top" constant="10" id="jGd-q2-nWS"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="avatarImg" destination="7vy-Zt-XWU" id="Lbh-vb-HzO"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		225F951BED233A8BA2E3C44F /* Pods_Smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 931F619EB5443031F422632C /* Pods_Smack.framework */; };
+		2F152F5E21961FB700F579C0 /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F152F5D21961FB700F579C0 /* AvatarCell.swift */; };
 		2F2B29272192097200C54313 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2B29262192097200C54313 /* AuthService.swift */; };
 		2F2B2929219496D800C54313 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2B2928219496D800C54313 /* RoundedButton.swift */; };
 		2F2B292B2195DAB700C54313 /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2B292A2195DAB700C54313 /* UserDataService.swift */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		14EBDA59572C638F9504EFF3 /* Pods-Smack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smack/Pods-Smack.release.xcconfig"; sourceTree = "<group>"; };
+		2F152F5D21961FB700F579C0 /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
 		2F2B29262192097200C54313 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		2F2B2928219496D800C54313 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		2F2B292A2195DAB700C54313 /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 			children = (
 				2F981526218F2FC1008F28E4 /* GradientView.swift */,
 				2F2B2928219496D800C54313 /* RoundedButton.swift */,
+				2F152F5D21961FB700F579C0 /* AvatarCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				2F2B29272192097200C54313 /* AuthService.swift in Sources */,
 				2F98152D218F416E008F28E4 /* LoginVC.swift in Sources */,
 				2F981527218F2FC1008F28E4 /* GradientView.swift in Sources */,
+				2F152F5E21961FB700F579C0 /* AvatarCell.swift in Sources */,
 				2FABA05A218E1E6F00D13445 /* AppDelegate.swift in Sources */,
 				2FAC2A1B218E232600C43ACE /* SWRevealViewController.m in Sources */,
 				2F98152B218F3D1B008F28E4 /* Constants.swift in Sources */,
