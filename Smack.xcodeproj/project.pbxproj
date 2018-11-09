@@ -11,6 +11,7 @@
 		2F2B29272192097200C54313 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2B29262192097200C54313 /* AuthService.swift */; };
 		2F2B2929219496D800C54313 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2B2928219496D800C54313 /* RoundedButton.swift */; };
 		2F2B292B2195DAB700C54313 /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2B292A2195DAB700C54313 /* UserDataService.swift */; };
+		2F2B292D2195F8BB00C54313 /* AvatarPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2B292C2195F8BB00C54313 /* AvatarPickerVC.swift */; };
 		2F31B7872191972B00AA693C /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F31B7862191972B00AA693C /* CreateAccountVC.swift */; };
 		2F981527218F2FC1008F28E4 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F981526218F2FC1008F28E4 /* GradientView.swift */; };
 		2F98152B218F3D1B008F28E4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F98152A218F3D1B008F28E4 /* Constants.swift */; };
@@ -29,6 +30,7 @@
 		2F2B29262192097200C54313 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		2F2B2928219496D800C54313 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		2F2B292A2195DAB700C54313 /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
+		2F2B292C2195F8BB00C54313 /* AvatarPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerVC.swift; sourceTree = "<group>"; };
 		2F31B7862191972B00AA693C /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		2F981526218F2FC1008F28E4 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		2F98152A218F3D1B008F28E4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				2FAC2A21218E257E00C43ACE /* ChannelVC.swift */,
 				2F98152C218F416E008F28E4 /* LoginVC.swift */,
 				2F31B7862191972B00AA693C /* CreateAccountVC.swift */,
+				2F2B292C2195F8BB00C54313 /* AvatarPickerVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FAC2A22218E257E00C43ACE /* ChannelVC.swift in Sources */,
+				2F2B292D2195F8BB00C54313 /* AvatarPickerVC.swift in Sources */,
 				2F2B2929219496D800C54313 /* RoundedButton.swift in Sources */,
 				2FAC2A20218E257000C43ACE /* ChatVC.swift in Sources */,
 				2F2B292B2195DAB700C54313 /* UserDataService.swift in Sources */,
