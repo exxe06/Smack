@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -52,7 +52,7 @@
                                 <rect key="frame" x="273" y="82.5" width="22" height="22"/>
                                 <state key="normal" image="addChannelButton"/>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="XTR-xE-5gG">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="XTR-xE-5gG" customClass="ProfileAvatarRound" customModule="Smack" customModuleProvider="target">
                                 <rect key="frame" x="15" y="572" width="75" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="854-Yt-pF3"/>
@@ -311,7 +311,7 @@
                                     <action selector="pickAvatarPressed:" destination="zLT-US-ggL" eventType="touchUpInside" id="lB6-aT-FVw"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="YJy-iY-uc3">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="YJy-iY-uc3" customClass="ProfileAvatarRound" customModule="Smack" customModuleProvider="target">
                                 <rect key="frame" x="137.5" y="329" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="82I-si-1kR"/>
@@ -385,13 +385,19 @@
                                     <action selector="pickBGColorPressed:" destination="zLT-US-ggL" eventType="touchUpInside" id="poA-M0-3JJ"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="be8-v9-som">
+                                <rect key="frame" x="169" y="290" width="37" height="37"/>
+                                <color key="color" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="be8-v9-som" firstAttribute="centerX" secondItem="HjB-Ex-lE8" secondAttribute="centerX" id="10V-Jg-I9L"/>
                             <constraint firstItem="YJy-iY-uc3" firstAttribute="centerX" secondItem="HjB-Ex-lE8" secondAttribute="centerX" id="4no-JF-18C"/>
                             <constraint firstItem="SZd-2e-c14" firstAttribute="width" secondItem="YJy-iY-uc3" secondAttribute="width" id="AJ1-TU-lVT"/>
                             <constraint firstItem="Zjd-54-sVD" firstAttribute="top" secondItem="HRU-uh-66Q" secondAttribute="top" constant="55" id="AXF-Oa-ezs"/>
                             <constraint firstItem="nhS-av-51x" firstAttribute="centerX" secondItem="HjB-Ex-lE8" secondAttribute="centerX" id="Ga6-KG-gNo"/>
+                            <constraint firstItem="be8-v9-som" firstAttribute="centerY" secondItem="HjB-Ex-lE8" secondAttribute="centerY" constant="-25" id="Gn0-M9-pXa"/>
                             <constraint firstItem="nhS-av-51x" firstAttribute="top" secondItem="Zjd-54-sVD" secondAttribute="bottom" constant="40" id="JJT-P0-ESA"/>
                             <constraint firstItem="HRU-uh-66Q" firstAttribute="trailing" secondItem="R64-xf-weV" secondAttribute="trailing" constant="15" id="NHj-iA-6i8"/>
                             <constraint firstItem="SZd-2e-c14" firstAttribute="centerX" secondItem="HjB-Ex-lE8" secondAttribute="centerX" id="QG6-Zl-uJK"/>
@@ -409,6 +415,7 @@
                     <connections>
                         <outlet property="emailTxt" destination="W9l-Ru-NBI" id="hze-HZ-0Yf"/>
                         <outlet property="passTxt" destination="Nv4-ke-VLw" id="avB-at-MWT"/>
+                        <outlet property="spinner" destination="be8-v9-som" id="tZ1-Ah-Yng"/>
                         <outlet property="userImg" destination="YJy-iY-uc3" id="jt5-lF-KDO"/>
                         <outlet property="usernameTxt" destination="reV-gg-nFo" id="Bg1-BA-rxi"/>
                         <segue destination="VK8-Wr-x2q" kind="unwind" identifier="unwindToChannel" unwindAction="prepareForUnwindWithSegue:" id="9Hn-uN-6JP"/>

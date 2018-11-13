@@ -25,10 +25,10 @@ class AvatarCell: UICollectionViewCell {
     func configureCell(index: Int, type: AvatarType) {
         if type == AvatarType.dark {
             avatarImg.image = UIImage(named: "dark\(index)")
-            self.layer.backgroundColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
+            self.layer.backgroundColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
         } else {
             avatarImg.image = UIImage(named: "light\(index)")
-            self.layer.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+            self.layer.backgroundColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
         }
         
     }
