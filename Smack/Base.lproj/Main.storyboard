@@ -51,6 +51,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rf6-2Y-LvM">
                                 <rect key="frame" x="273" y="82.5" width="22" height="22"/>
                                 <state key="normal" image="addChannelButton"/>
+                                <connections>
+                                    <action selector="addChannelPressed:" destination="Qwo-tm-P7s" eventType="touchUpInside" id="JOY-zI-nYg"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="XTR-xE-5gG" customClass="ProfileAvatarRound" customModule="Smack" customModuleProvider="target">
                                 <rect key="frame" x="15" y="572" width="75" height="75"/>
