@@ -35,6 +35,7 @@
 		2FB1354F219C8153002F23F6 /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FB1354D219C8152002F23F6 /* ProfileVC.xib */; };
 		2FD5621521A4727200628C79 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5621421A4727200628C79 /* Message.swift */; };
 		2FD5621721A47C6E00628C79 /* KeyboardBoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5621621A47C6E00628C79 /* KeyboardBoundView.swift */; };
+		2FD5621921A4837C00628C79 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5621821A4837C00628C79 /* MessageCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		2FB1354D219C8152002F23F6 /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
 		2FD5621421A4727200628C79 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		2FD5621621A47C6E00628C79 /* KeyboardBoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeyboardBoundView.swift; path = "Smack Assets/KeyboardBind View/KeyboardBoundView.swift"; sourceTree = SOURCE_ROOT; };
+		2FD5621821A4837C00628C79 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		7B2E0416382BC35E6EC806DB /* Pods-Smack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smack/Pods-Smack.debug.xcconfig"; sourceTree = "<group>"; };
 		931F619EB5443031F422632C /* Pods_Smack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -175,6 +177,7 @@
 				2FB1354A219B2D42002F23F6 /* ProfileAvatarRound.swift */,
 				2F3AFB5D21A2E2930062D387 /* ChannelCell.swift */,
 				2FD5621621A47C6E00628C79 /* KeyboardBoundView.swift */,
+				2FD5621821A4837C00628C79 /* MessageCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -341,6 +344,7 @@
 				2F3AFB5E21A2E2930062D387 /* ChannelCell.swift in Sources */,
 				2FAC2A22218E257E00C43ACE /* ChannelVC.swift in Sources */,
 				2F2B292D2195F8BB00C54313 /* AvatarPickerVC.swift in Sources */,
+				2FD5621921A4837C00628C79 /* MessageCell.swift in Sources */,
 				2F2B2929219496D800C54313 /* RoundedButton.swift in Sources */,
 				2FD5621521A4727200628C79 /* Message.swift in Sources */,
 				2F3AFB5C219E0B740062D387 /* Channel.swift in Sources */,
