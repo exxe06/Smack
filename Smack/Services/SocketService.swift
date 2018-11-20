@@ -13,16 +13,12 @@ class SocketService: NSObject {
 
     static let instance = SocketService()
     
-    let manager: SocketService
-    let socket: SocketIOClient
-    
     override init() {
-        self.manager = Socket
-        super.init()
-        
+         super.init()
 
     }
-        
+    
+    var socket: SocketIOClient = SocketIOClient(socketURL: URL(string: BASE_URL)!)
 
     func establishConnection() {
         socket.connect()
